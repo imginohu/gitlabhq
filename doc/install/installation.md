@@ -235,6 +235,7 @@ Make sure to edit both `gitlab.yml` and `puma.rb` to match your setup.
 ## Initialize Database and Activate Advanced Features
 
     sudo -u git -H bundle exec rake gitlab:setup RAILS_ENV=production
+    sudo -u git -H bundle exec rake sidekiq:start RAILS_ENV=production
 
     # Type 'yes' to create the database.
 
